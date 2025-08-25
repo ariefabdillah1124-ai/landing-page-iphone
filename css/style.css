@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "inter",sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    line-height: 1.6;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* STYLING HEADER */
+.main-header{
+    background-color: rgb(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 2px solid #ddd;
+}
+
+.main-header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+.main-nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 4px 6px;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* transition itu buat ngasih transisi kepada hover*/
+
+/* hover itu buat ngasih animasi ketika krusornya kearah yg dikasih hover maka berganti warna*/
+.main-nav a:hover{
+    color: rgb(247, 15, 15);
+}
+
+/* styling buttuns (tombol tombol)*/
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+a.btn-nav{
+    background-color: rgba(74, 35, 128);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+}
+
+a.btn-nav:hover{
+    color: white;
+    background-color: rgb(248, 36,8);
+}
+
+.btn-primary{
+    background-color: blue;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-secondary{
+    background-color: gray;
+    color: white;
+}
+
+.btn-primary:hover{
+    transform: scale(1.05);
+}
+.btn-secondary:hover{
+    transform: scale(1.05);
+}
+
+.hero-section{
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text{
+    flex: 1;
+    text-align: 64px;
+}
+
+.hero-text h1{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.hero-text h2{
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 24px;
+    max-width: 450px;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.hero-image{
+    flex: 1;
+}
+
+.hero-image img{
+    max-width: 100%;
+    height: auto;
+}
